@@ -1,7 +1,13 @@
 # Petful Server
-Developers: Kameron Masullo and Zenzi Ali
-This API allows the user to request pet data stored for our Petful client application.  A user has the ability to view all potential pets.  The user can also sign up to become an adoptive pet owner via our landing page.  Potential owners are placed in queue and given the opportunity to adopt the next available pet.  A potential adoptive owner can choose the cat or dog currently available for adoption.  Choosing a pet removes said pet from our inventory and repopulates our "available for adoption" page with the next waiting pet in queue. This API holds the endpoints for populating the next available pet page, adopting a pet (deleting it from our stock), registering as a adopter (posting to our user queue), and updating the next available pet after a successful adoption.
+App Name: Petful
+Client App(Deployed):
+Client repo: https://github.com/thinkful-ei-quail/petful-frontend-zenzi-kameron
+API repo: https://github.com/thinkful-ei-quail/petful-zenzi-kameron
+Co-Developers: Kameron Masullo and Zenzi Ali
+Petful is an app that allows users to adopt cats and dogs after creating an account name.  Users may only adopt the cat or dog that has been housed by our organization the longest.  Users may view all our entire inventory of pets and see details about each cat or dog.  Select the adopt button when you are 1st in our waiting list.
 
-This project uses Node.js, React.js (client-side), and JavaScript. The project also relies on JavaScript Queue structure with JS algorithms for creating CRUD requests.
+This API provides server side support for the app.  It provides endpoints for adding new users to the waiting list and deleting users after the adoption cycle.  
+
+This project uses Node.js, React.js (client-side)Express, and JavaScript. The project also relies on JavaScript Queue structure with JS algorithms for creating CRUD requests.
 
 ADD EXAMPLE REQUESTS AND RESPONSES!!!!!!!!!

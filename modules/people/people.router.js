@@ -22,4 +22,9 @@ router.post("/", json, (req, res) => {
   res.sendStatus(201);
 });
 
+router.delete("/", json, (req, res) => {
+  const { name } = req.body;
+  res.send(People.delete(name));
+});
+
 module.exports = router;
