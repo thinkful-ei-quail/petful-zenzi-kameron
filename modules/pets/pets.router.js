@@ -10,6 +10,15 @@ router.get("/", (req, res) => {
   // Return all pets currently up for adoption.
   res.send(Pets.get());
 });
+router.get("/cats", (req, res) => {
+  // Return all cats
+  res.send(Pets.getAllByType("cats"));
+});
+
+router.get("/dogs", (req, res) => {
+  // Return all dogs
+  res.send(Pets.getAllByType("dogs"));
+});
 
 router.get("/cat", (req, res) => {
   res.send(Pets.getByType("cats"));

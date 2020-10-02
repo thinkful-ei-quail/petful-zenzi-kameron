@@ -22,6 +22,10 @@ module.exports = {
     return { cats, dogs };
   },
 
+  getAllByType(type) {
+    return pets[type].all();
+  },
+
   getByType(type) {
     return pets[type].show();
   },
