@@ -2,6 +2,7 @@ class _Node {
   constructor(value) {
     this.value = value;
     this.next = null;
+    this.last = null;
   }
 }
 class Queue {
@@ -12,38 +13,36 @@ class Queue {
 
   enqueue(data) {
     const node = new _Node(data);
-    if (this.first === null) {
+    if (!this.first) {
       this.first = node;
     }
-
     if (this.last) {
       this.last.next = node;
     }
-
     this.last = node;
   }
   dequeue() {
-    if (this.first === null) {
+    if (!this.first) {
       return;
     }
     const node = this.first;
     this.first = this.first.next;
-    if (node === this.last) {
+    this.first.last = null;
+    if (node == this.last) {
       this.last = null;
     }
     return node.value;
   }
 
   show() {
-    return queue.first.value;
+    return this.first.value;
   }
 
   all() {
-    let currentNode = queue.first;
-    let results = " ";
+    let currentNode = this.first;
+    let results = [];
     while (currentNode !== null) {
-      results += currentNode.value;
-      results += " ";
+      results.push(currentNode.value);
       currentNode = currentNode.next;
     }
     return results;
