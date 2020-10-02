@@ -17,14 +17,16 @@ store.dogs.forEach((dog) => pets.dogs.enqueue(dog));
 
 module.exports = {
   get() {
-    return pets.show();
+    let cats = pets.cats.all();
+    let dogs = pets.dogs.all();
+    return { cats, dogs };
   },
 
   getByType(type) {
-    return pets.show(type);
+    return pets[type].show();
   },
 
-  dequeue(type) {
-    pets.dequeue(type);
+  delete(type) {
+    return pets[type].dequeue();
   },
 };
