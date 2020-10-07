@@ -35,6 +35,7 @@ class Queue {
   }
 
   show() {
+    if (!this.first) return null;
     return this.first.value;
   }
 
