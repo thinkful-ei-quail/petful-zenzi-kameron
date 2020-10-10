@@ -11,4 +11,4 @@ This API provides server side support for the app. It provides endpoints for add
 
 This project uses Node.js, React.js (client-side)Express, and JavaScript. The project also relies on JavaScript Queue structure with JS algorithms for creating CRUD requests.
 
-ADD EXAMPLE REQUESTS AND RESPONSES!!!!!!!!!
+EXAMPLE REQUESTS AND RESPONSES
